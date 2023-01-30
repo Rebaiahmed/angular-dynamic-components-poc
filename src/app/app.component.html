@@ -1,0 +1,18 @@
+<section class="mat-button-container">
+  <h2>Angular Material dialog</h2>
+  <div class="example-button-row">
+    <button mat-raised-button (click)="alertDialog()">
+      Angular Material Alert
+    </button>
+    <button mat-raised-button color="primary" (click)="confirmDialog()">
+      Confirm
+    </button>
+    <button mat-raised-button color="accent" (click)="showPrompt()">
+      Prompt Input
+    </button>
+  </div>
+</section>
+
+<h2 *ngIf="dataFromDialog">
+  Data from Angular material dialog : {{ dataFromDialog | json }}
+</h2>
